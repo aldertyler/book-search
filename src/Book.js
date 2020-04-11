@@ -1,0 +1,14 @@
+import React, { Component } from "react";
+
+export default class Book extends Component {
+  render() {
+    return (
+      <li>
+        <img src={this.props.books.image} alt="hello" />
+        <h2>{this.props.books.title}</h2>
+        <h3>{this.props.books.author}</h3>
+        <h3>{this.props.books.description}</h3>
+      </li>
+    );
+  }
+}
